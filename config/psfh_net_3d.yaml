@@ -1,0 +1,73 @@
+#DATA
+classes: 4
+data_root: ../dog_kidney/dataset/nii_conversion/train/
+modality: CT
+
+
+#MODEL
+arch: psfh_net
+in_chan: 1
+base_chan: 32
+conv_block: 'BasicBlock'
+
+
+
+pool_op_kernel_sizes:  [[2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2]]
+conv_kernel_sizes: [[3,3,3], [3,3,3], [3,3,3], [3,3,3], [3,3,3]]
+max_num_features: 320
+depths: [2, 2, 2, 2]
+num_heads: [2, 4, 4, 4]
+
+window_sizes: [4,4,4]
+drop_path_rate: 0.2
+mlp_ratio: 4.
+num_only_conv_stage: 1
+positional_encoding: True
+stack: True
+
+#TRAIN
+epochs: 100
+training_size: [64, 128, 128] # training crop size
+start_epoch: 0
+num_workers: 0
+
+aux_loss: True
+aux_weight: [1, 0.5, 0.3, 0.2, 0.1]
+aug_device: 'cpu'
+
+
+split_seed: 0
+k_fold: 5
+
+optimizer: adamw
+base_lr: 0.0005
+betas: [0.9, 0.999]
+weight_decay: 0.05  # weight decay of SGD optimizer
+weight: [0.5, 1.0, 2.0, 1.5]
+rlt: 1 # relation between CE and Dice loss
+
+
+scale: [0.3, 0.3, 0.3]  # scale for data augmentation  0 0.3 0.3
+rotate: [30, 30, 30] # rotation angle for data augmentation 30
+translate: [0, 0, 0]
+affine_pad_size: [40, 40, 40]
+gaussian_noise_std: 0.02
+
+print_freq: 50
+iter_per_epoch: 200
+
+
+
+
+#VALIDATION
+ema: False
+ema_alpha: 0.99
+val_freq: 5
+
+
+
+#INFERENCE
+sliding_window: True
+window_size: [64, 128, 128]
+
+reproduce_seed: null
