@@ -361,7 +361,7 @@ class SemanticMapFusion(nn.Module):
             attned_maps[i].permute(0, 2, 1).view(B, self.dim, self.map_size[0], self.map_size[1], self.map_size[
                 2])) for i in range(len(map_list))]
 
-
+        #
         # maps_out[1] = self.map_reduction1(torch.cat([map_list[0], F.interpolate(maps_out[1], size=map_list[0].shape[-3:], mode='trilinear',
         #                                                                            align_corners=True)], dim=1))
         #
