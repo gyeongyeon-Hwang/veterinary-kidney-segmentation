@@ -4,7 +4,7 @@ This repository contains code and data files to reproduce the segmentation resul
 ## Requirement
     $ git clone https://github.com/gyeongyeon-Hwang/veterinary-kidney-segmentation
     $ pip install -r requirement.txt
-## Datasets request
+## Datasets requestion
 <img src="img/axial.gif" width="300" height="300"> <img src="img/dorsal.gif" width="300" height="300"></center> 
 - Please request the data through the link below 
   (https://docs.google.com/forms/d/e/1FAIpQLSfx2Aj17ixdHmeMbbJofYhs3pkqj_f8AeCHVlYoDFbOzvPUdA/viewform)
