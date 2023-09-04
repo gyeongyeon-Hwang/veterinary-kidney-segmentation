@@ -1,6 +1,6 @@
 # Parallel Spatial-Frequency Hybrid Network (PSFH-Net)
 This repository contains code and data files to reproduce the segmentation results of a pre-contrast CT of a dog's kidney, kidney stone, and kidney pelvis.
-![fig1](https://github.com/gyeongyeon-Hwang/veterinary-kidney-segmentation/assets/76763306/ad5daa19-3406-4c3b-8653-242bfa3b7473)
+![fig1](img/fig1.png)
 ## Requirement
     $ git clone https://github.com/gyeongyeon-Hwang/veterinary-kidney-segmentation
     $ pip install -r requirement.txt
