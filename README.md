@@ -4,7 +4,8 @@ This repository contains code and data files to reproduce the segmentation resul
 ## Requirement
 https://docs.google.com/forms/d/e/1FAIpQLSfx2Aj17ixdHmeMbbJofYhs3pkqj_f8AeCHVlYoDFbOzvPUdA/viewform?usp=sf_link
 ## Datasets request
-![axial-min](https://github.com/gyeongyeon-Hwang/veterinary-kidney-segmentation/assets/76763306/03a57d5d-8105-45d6-9a6c-23b467418875){: width="70%" height="70"} ![dorsal](https://github.com/gyeongyeon-Hwang/veterinary-kidney-segmentation/assets/76763306/178457cc-2603-4484-9b51-13e40d9d233c)
+![axial-min](https://github.com/gyeongyeon-Hwang/veterinary-kidney-segmentation/assets/76763306/03a57d5d-8105-45d6-9a6c-23b467418875){: width="50%" height="50"}
+![dorsal](https://github.com/gyeongyeon-Hwang/veterinary-kidney-segmentation/assets/76763306/178457cc-2603-4484-9b51-13e40d9d233c)
 - Please request the data through the link below 
   (https://docs.google.com/forms/d/e/1FAIpQLSfx2Aj17ixdHmeMbbJofYhs3pkqj_f8AeCHVlYoDFbOzvPUdA/viewform)
 ## Experiment environment
