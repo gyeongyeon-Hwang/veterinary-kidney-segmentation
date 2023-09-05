@@ -16,9 +16,11 @@ This repository contains code and data files to reproduce the segmentation resul
 ## Datasets processing
 - Create a folder under {LOCAL_PATH} ./dataset
 - Data Conversion
+
     $ python cd ./dataset_conversion
     $ python ./rearrange.py
     $ python ./animal3d.py
+
 ## Training
 
     $ python ./train.py --dataset {dataset_root} --batch_size {batch} --cp_path {checkpoint path} --log_path {log_path} --unique_name {experiment name} --gpu {NUM_DEVICE}
