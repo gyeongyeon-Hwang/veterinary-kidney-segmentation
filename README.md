@@ -14,9 +14,6 @@ This repository contains code and data files to reproduce the segmentation resul
 - Python 3.8.17
 - PyTorch 1.13.1
 ## Datasets processing
-- Create a folder under {LOCAL_PATH} ./dataset
-- Data Conversion
-
     $ python cd ./dataset_conversion
     $ python ./rearrange.py
     $ python ./animal3d.py
